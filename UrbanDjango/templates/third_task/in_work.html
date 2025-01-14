@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Сервис по обслуживанию оборудования</title>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <ul>
+<!--вариант 1 (за коментировано):-->
+<!--        <li><h2>{{ device1 }} <button><a href="#">Модели</a></button> </h2></li>-->
+<!--        <li><h2>{{ device2 }} <button><a href="#">Модели</a></button></h2></li>-->
+<!--        <li><h2>{{ device3 }} <button><a href="#">Модели</a></button></h2></li>-->
+<!--вариант 2 (использование цикла для отображения):-->
+        {% for device in devices %}
+        <li><h2>{{ device }} <button><a href="#">Модели</a></button></h2></li>
+        {% endfor %}
+    </ul>
+    <button><a href="/">Вернуться обратно</a></button>
+</body>
+</html>
