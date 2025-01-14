@@ -16,7 +16,7 @@ def in_work(request):
         'device1' : device1, # устройство закоментировано в in_work.html вариант 1
         'device2' : device2, # устройство закоментировано в in_work.html вариант 1
         'device3' : device3, # устройство закоментировано в in_work.html вариант 1
-        'devices' : ['Принтеры HP', 'Сканеры HP', 'МФУ HP'] # в in_work.html вариант 2
+        'devices' : ['Принтеры HP', 'Сканеры HP', 'МФУ HP'], # в in_work.html вариант 2
     }
     return render(request, 'third_task/in_work.html', context)
 
